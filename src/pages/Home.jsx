@@ -40,7 +40,7 @@ const Home=()=>{
                 user == null ? (<p>Loading...</p> ): (
                     user.map( (val, key) => {
                         return(
-                            <a href={val.url} target="_blank" key={key} to={`/${val.id}`}>
+                            <a href={val.url} target="_blank" rel="noreferrer" key={key} to={`/${val.id}`}>
                                 <div className="container">
                                     <div className="row mt-3">
                                         <div className="col-sm-6">
